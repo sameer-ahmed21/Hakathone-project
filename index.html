@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furniro</title>
+    <title>Furniro - Furniture Store</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Font - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Apna CSS link karo -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/Meubel House_Logos-05.png" width="40px" height="40px" alt="Furniro Logo">
+            <img src="images/Meubel House_Logos-05.png" alt="Furniro Logo">
             <h1>Furniro</h1>
         </div>
-        <nav>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav id="mainNav">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
@@ -20,16 +35,17 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+
         <div class="icons">
-            <a href="#"><img src="images/user.svg" alt="User"></a>
-            <a href="#"><img src="images/search.svg" alt="Search"></a>
-            <a href="#"><img src="images/heart.svg" alt="Wishlist"></a>
-            <a href="#"><img src="images/shopping-cart.svg" alt="Cart"></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-heart"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
         </div>
     </header>
 
-    <main>
-      <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero">
         <img src="images/hero.png" alt="Furniture Hero" class="hero-bg">
         <div class="hero-box">
             <span class="new-arrival">New Arrival</span>
@@ -39,152 +55,149 @@
         </div>
     </section>
 
+    <!-- Browse The Range -->
+    <section id="browse-the-range">
+        <h2>Browse The Range</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="categories">
+            <div class="category">
+                <img src="images/Mask Group (1).png" alt="Dining">
+                <h3>Dining</h3>
+            </div>
+            <div class="category">
+                <img src="images/Image-living room.png" alt="Living">
+                <h3>Living</h3>
+            </div>
+            <div class="category">
+                <img src="images/Mask Group.png" alt="Bedroom">
+                <h3>Bedroom</h3>
+            </div>
+        </div>
+    </section>
 
-        <section id="browse-the-range">
-            <h2>Browse The Range</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div class="categories">
-                <div class="category">
-                    <img src="images\Mask Group (1).png" alt="Dining">
-                    <h3>Dining</h3>
+    <!-- Our Products -->
+    <section id="our-products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image 1.png" alt="Syltherine">
+                    <span class="discount">-30%</span>
                 </div>
-                <div class="category">
-                    <img src="images/Image-living room.png" alt="Living">
-                    <h3>Living</h3>
+                <h3>Syltherine</h3>
+                <p>Stylish cafe chair</p>
+                <p class="price">Rp 2.500.000 <span class="old-price">Rp 3.500.000</span></p>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image 8.png" alt="Leviosa">
                 </div>
-                <div class="category">
-                    <img src="images/Mask Group.png" alt="Bedroom">
-                    <h3>Bedroom</h3>
+                <h3>Leviosa</h3>
+                <p>Stylish cafe chair</p>
+                <p class="price">Rp 2.500.000</p>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/Images.png" alt="Lolito">
+                    <span class="discount">-50%</span>
+                </div>
+                <h3>Lolito</h3>
+                <p>Luxury big sofa</p>
+                <p class="price">Rp 7.000.000 <span class="old-price">Rp 14.000.000</span></p>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image 4.png" alt="Respira">
+                    <span class="new">New</span>
+                </div>
+                <h3>Respira</h3>
+                <p>Outdoor bar table and stool</p>
+                <p class="price">Rp 500.000</p>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/Images (1).png" alt="Grifo">
+                </div>
+                <h3>Grifo</h3>
+                <p>Night lamp</p>
+                <p class="price">Rp 1.500.000</p>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image 6.png" alt="Muggo">
+                    <span class="new">New</span>
+                </div>
+                <h3>Muggo</h3>
+                <p>Small mug</p>
+                <p class="price">Rp 150.000</p>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/Images (2).png" alt="Pingky">
+                    <span class="discount">-50%</span>
+                </div>
+                <h3>Pingky</h3>
+                <p>Cute bed set</p>
+                <p class="price">Rp 7.000.000 <span class="old-price">Rp 14.000.000</span></p>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image 8.png" alt="Potty">
+                    <span class="new">New</span>
+                </div>
+                <h3>Potty</h3>
+                <p>Minimalist flower pot</p>
+                <p class="price">Rp 500.000</p>
+            </div>
+        </div>
+        <button class="btn-show-more">Show More</button>
+    </section>
+
+    <!-- Inspiration Section -->
+    <section id="inspiration">
+        <div class="inspiration-content">
+            <h2>50+ Beautiful rooms inspiration</h2>
+            <p>Our designer already made a lot of beautiful prototype of rooms that inspire you</p>
+            <a href="#" class="btn">Explore More</a>
+        </div>
+        <div class="inspiration-images">
+            <div class="main-image">
+                <img src="images/Rectangle 24.png" alt="Main Room">
+                <div class="image-caption">
+                    <p>01 - Bed Room</p>
+                    <h3>Inner Peace</h3>
                 </div>
             </div>
-        </section>
-
-        <section id="our-products">
-            <h2>Our Products</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/image 1.png" alt="Syltherine">
-                        <span class="discount">-30%</span>
-                    </div>
-                    <h3>Syltherine</h3>
-                    <p>Stylish cafe chair</p>
-                    <p class="price">Rp 2.500.000 <span class="old-price">Rp 3.500.000</span></p>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/image 8.png" alt="Leviosa">
-                    </div>
-                    <h3>Leviosa</h3>
-                    <p>Stylish cafe chair</p>
-                    <p class="price">Rp 2.500.000</p>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/Images.png" alt="Lolito">
-                        <span class="discount">-50%</span>
-                    </div>
-                    <h3>Lolito</h3>
-                    <p>Luxury big sofa</p>
-                    <p class="price">Rp 7.000.000 <span class="old-price">Rp 14.000.000</span></p>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/image 4.png" alt="Respira">
-                        <span class="new">New</span>
-                    </div>
-                    <h3>Respira</h3>
-                    <p>Outdoor bar table and stool</p>
-                    <p class="price">Rp 500.000</p>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/Images (1).png" alt="Grifo">
-                    </div>
-                    <h3>Grifo</h3>
-                    <p>Night lamp</p>
-                    <p class="price">Rp 1.500.000</p>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/image 6.png" alt="Muggo">
-                        <span class="new">New</span>
-                    </div>
-                    <h3>Muggo</h3>
-                    <p>Small mug</p>
-                    <p class="price">Rp 150.000</p>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/Images (2).png" alt="Pingky">
-                        <span class="discount">-50%</span>
-                    </div>
-                    <h3>Pingky</h3>
-                    <p>Cute bed set</p>
-                    <p class="price">Rp 7.000.000 <span class="old-price">Rp 14.000.000</span></p>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/image 8.png" alt="Potty">
-                        <span class="new">New</span>
-                    </div>
-                    <h3>Potty</h3>
-                    <p>Minimalist flower pot</p>
-                    <p class="price">Rp 500.000</p>
-                </div>
+            <div class="thumbnail-images">
+                <img src="images/Rectangle 25.png" alt="Thumbnail 1">
+                <img src="images/Rectangle 26.png" alt="Thumbnail 2">
             </div>
-             <button class="btn-show-more">Show More</button>
-        </section>
+        </div>
+    </section>
 
-        <section id="inspiration">
-            <div class="inspiration-content">
-                <h2>50+ Beautiful rooms inspiration</h2>
-                <p>Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
-                <a href="#" class="btn">Explore More</a>
-            </div>
-            <div class="inspiration-images">
-                <div class="main-image">
-                    <img src="images/Rectangle 24.png" alt="Inspiration Image 1">
-                    <div class="image-caption">
-                        <p>01 - Bed Room</p>
-                        <h3>Inner Peace</h3>
-                    </div>
-                </div>
-                <div class="thumbnail-images">
-                    <img src="images/Rectangle 25.png" alt="Inspiration Image 2">
-                    
-                </div>
-                <div class="slider-controls">
-                    <span class="active"></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </section>
+    <!-- Share Setup -->
+    <section id="share-setup">
+        <h2>Share your setup with</h2>
+        <h1>#FuniroFurniture</h1>
+        <div class="share-grid">
+            <div class="grid-item"><img src="images/Rectangle 36.png" alt=""></div>
+            <div class="grid-item"><img src="images/Rectangle 38.png" alt=""></div>
+            <div class="grid-item"><img src="images/Rectangle 37.png" alt=""></div>
+            <div class="grid-item"><img src="images/Rectangle 39.png" alt=""></div>
+            <div class="grid-item"><img src="images/Rectangle 40 (1).png" alt=""></div>
+            <div class="grid-item"><img src="images/Rectangle 37.png" alt=""></div>
+            <div class="grid-item"><img src="images/Rectangle 43.png" alt=""></div>
+            <div class="grid-item"><img src="images/Rectangle 41.png" alt=""></div>
+            <div class="grid-item"><img src="images/Rectangle 44.png" alt=""></div>
+        </div>
+    </section>
 
-        <section id="share-setup">
-            <h2>Share your setup with</h2>
-            <h1>#FuniroFurniture</h1>
-            <div class="share-grid">
-                <div class="grid-item"><img src="images/Rectangle 36.png" alt="Share Image 1"></div>
-                <div class="grid-item"><img src="images/Rectangle 38.png" alt="Share Image 2"></div>
-                <div class="grid-item"><img src="images/Rectangle 37.png" alt="Share Image 3"></div>
-                <div class="grid-item"><img src="images/Rectangle 39.png" alt="Share Image 4"></div>
-                <div class="grid-item"><img src="images/Rectangle 40 (1).png" alt="Share Image 5"></div>
-                <div class="grid-item"><img src="images/Rectangle 37.png" alt="Share Image 6"></div>
-                <div class="grid-item"><img src="images/Rectangle 43.png" alt="Share Image 7"></div>
-                <div class="grid-item"><img src="images/Rectangle 41.png" alt="Share Image 8"></div>
-                <div class="grid-item"><img src="images/Rectangle 44.png" alt="Share Image 9"></div>
-            </div>
-        </section>
-    </main>
-
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="brand">
                 <h2>Funiro.</h2>
-                <p>400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+                <p>400 University Drive Suite 200 Coral Gables,<br>FL 33134 USA</p>
             </div>
             <div class="links">
                 <h3>Links</h3>
@@ -212,8 +225,10 @@
             </div>
         </div>
         <div class="copyright">
-            <p>2023 furino. All rights reverved</p>
+            <p>2023 furino. All rights reserved</p>
         </div>
     </footer>
+
+  
 </body>
 </html>
